@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 4455;
 
 app.use(express.static("public"))
 app.use(express.json())
-app.use(cors({origin:process.env.CLIENT_URL}))
+app.use(cors({origin:CLIENT_URL}))
 app.use(cookieParser())
 
 
