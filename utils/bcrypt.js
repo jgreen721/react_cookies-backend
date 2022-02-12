@@ -14,7 +14,7 @@ async function hashPW(pw){
 async function comparePW(pw,hash){
 
     let result =  await bcrypt.compare(pw,hash)
-    console.log("PW_RESULT",hashedPW);
+    console.log("PW_RESULT",result);
     return result;
 }
 
