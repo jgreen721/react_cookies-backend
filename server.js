@@ -20,6 +20,10 @@ app.use(routes)
 
 
 
+app.get('/test',(req,res)=>{
+    res.json({msg:"dummy data"})
+})
+
 
 
 app.listen(PORT,console.log(`Listening in on port ${PORT}, ${process.env.USER}`))
